@@ -1,0 +1,352 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+header{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.navigation {
+  height: 80px;
+  width: 100%;
+  padding: 0px 10%;
+  background-color: whitesmoke;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.logo {
+  font-size: 2.5rem;
+}
+
+
+
+/* leptop nav */
+
+.main-manu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.main-manu li {
+  display: inline-block;
+  position: relative;
+}
+
+.main-manu li a {
+  display: block;
+  padding: 12px 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.main-manu ul li:hover a {
+  background-color: cadetblue;
+  color: white;
+}
+
+
+
+
+/* Dropdown Menu Style */
+
+.main-manu ul ul {
+  position: absolute;
+  left: 0;
+  top: 43px;
+  color: white;
+  width: 200px;
+  display: none;
+  z-index: 999;
+}
+
+.main-manu ul ul li {
+  display: block;
+}
+
+.main-manu ul li:hover ul {
+  display: block;
+}
+
+ 
+
+/* you can change color   */
+
+.main-manu ul li:hover a {
+  color: white;
+  border: 1px solid white;
+}
+
+.main-manu ul li:hover li a {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.main-manu ul ul li a:hover {
+  background-color: cadetblue;
+  color: white;
+  
+}
+
+
+
+
+
+/* movile nav disply:none in leptop */
+
+.mobile-nav{
+  display: none;
+}
+
+
+
+
+/* button nav  */
+/* you can ad hover efact and color change */
+
+.button .button-one button {
+  padding: 8px 18px;
+}
+
+/* hide and show button hide */
+.button-hide {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tab style */
+
+
+@media (max-width:768px) {
+
+  header{
+    height: 100vh;
+    width: 100%;
+    background-color:white;
+    position: relative;
+  }
+  
+  .navigation {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5%;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  
+  
+  /* leptop nav */
+  
+  .main-manu  {
+    display: none;
+  }
+
+  
+  
+  /* movile nav */
+
+  .mobile-nav{
+    position: absolute;
+    top: 80px;
+    right: 0%;
+    width: 100%;
+    padding: 30px 0px 50px 0px;
+    background-color: whitesmoke;
+  }
+
+  .mobile-nav li {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .mobile-nav li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 12px 0px;
+  }
+
+  .service {
+    padding: 12px 0px;
+  }
+
+  .mobile-nav li :hover a{
+    background-color: cadetblue;
+  }
+
+  
+  .service-golo {
+    padding: 4px !important;
+    background-color: cadetblue;
+  }
+
+  .service-golo a {
+    font-size: 1.1rem !important;
+    color: white !important;
+  }
+  
+  
+  
+    
+  /* button nav  */
+  
+  .button .button-one button {
+    padding: 8px 18px;
+  }
+  
+  .button-hide {
+    display: inline-block;
+  } 
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile style */
+
+@media (max-width: 425px) {
+
+
+
+  header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  .navigation {
+    height: 80px;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2%;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+  }
+  
+
+
+  /* leptop nav */
+  
+  .main-manu  {
+    display: none;
+  }
+
+  
+
+  /* movile nav */
+
+  .mobile-nav{
+    position: absolute;
+    top: 80px;
+    right: 0%;
+    width: 100%;
+    padding: 30px 0px 50px 0px;
+    /* display: inline-block; */
+    background-color: whitesmoke;
+  }
+
+  .mobile-nav li {
+    /* display: block;
+    position: relative; */
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .mobile-nav li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 12px 0px;
+  }
+
+  .service {
+    padding: 12px 0px;
+  }
+
+  .mobile-nav li :hover a{
+    background-color: cadetblue;
+  }
+
+
+  
+  .service-golo {
+    padding: 4px !important;
+    background-color: cadetblue;
+  }
+
+  .service-golo a {
+    font-size: 1.1rem !important;
+    color: white !important;
+  }
+  
+  
+  
+    
+  
+  /* button nav  */
+  
+  .button .button-one button {
+    padding: 8px 18px;
+  }
+  
+  .button-hide {
+    display: inline-block;
+  }
+
+  
+}
